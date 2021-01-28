@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Android Web Toolkit"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/config_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="Config"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="18dp" />
+
+    <LinearLayout
+        android:id="@+id/edit_texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_text"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:labelFor="@+id/server_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server Port" />
+        <EditText
+            android:id="@+id/server_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:text="8080"
+            android:inputType="number"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#727272" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#eaeaea" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_toggle_server"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_texts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/circle_blue"
+        android:textColor="@android:color/white"
+        android:text="Start Service"
+        android:textSize="18sp" />
+</RelativeLayout>
